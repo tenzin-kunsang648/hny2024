@@ -1,16 +1,3 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    font-family: Arial, sans-serif;
-}
-
 body {
     height: 100vh;
     display: flex;
@@ -18,28 +5,25 @@ body {
     justify-content: center;
     background: -webkit-linear-gradient(to right, #5d26c1, #a17fe0, #59c173);
     background: linear-gradient(to right, #5d26c1, #a17fe0, #59c173);
+    position: relative;
+    overflow: hidden;
 }
 
 canvas#confetti {
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     z-index: 1000;
     pointer-events: none;
 }
 
-h1 {
-    z-index: 1;
-}
-
-#confetti-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 0;
+.new-year-message {
+    color: #FFF;
+    font-size: 4rem;
+    text-align: center;
+    z-index: 1001;
+    font-family: 'Brush Script MT', cursive; /* Or any other festive font */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
 }

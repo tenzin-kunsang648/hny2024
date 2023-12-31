@@ -1,8 +1,6 @@
-const button = document.querySelector('#button');
-const jsConfetti = new JSConfetti();
-
-button.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', () => {
+    const jsConfetti = new JSConfetti();
     jsConfetti.addConfetti({
         emojis: ['🌈', '⚡️', '💥', '✨', '💫', '🌸'],
-    }).then(() => jsConfetti.addConfetti());
+    });
 });
